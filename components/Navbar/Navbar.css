@@ -1,0 +1,62 @@
+#SearchBar {
+    display: none;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 720px) {
+    nav {
+        padding: 0 2rem;
+    }
+}
+
+nav>ul {
+    display: flex;
+    gap: 3rem;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: inherit;
+    transform: scale(1.5);
+}
+
+nav a {
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--hightlight);
+}
+
+#AdvSettings {
+    anchor-name: --busquedaAdv;
+}
+
+#advSettingsMenu {
+    margin: 0;
+    inset: auto;
+    position: absolute;
+    top: anchor(bottom);
+    right: anchor(right);
+    border: 0;
+    padding: 0;
+    border-radius: 2px;
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
+    font-size: 1rem;
+    position-anchor: --busquedaAdv;
+    margin-block-start: 6px;
+}
+
+#advSettingsMenu:popover-open {
+    display: grid;
+}
