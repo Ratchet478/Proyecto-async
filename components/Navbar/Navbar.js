@@ -74,5 +74,8 @@ export const Navbar = () => `
     <li>
         <button id="themeBtn">☀</button>
     </li>
+        <li>
+        <a href="https://github.com/Ratchet478/Proyecto-async" id="github"><i class="fab fa-github"></i></a>
+    </li>
 </ul>
 </nav>`
