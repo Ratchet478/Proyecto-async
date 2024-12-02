@@ -3,6 +3,7 @@ import {cleanPage} from "../../utils/cleanPage.js";
 import {getRandomPhoto} from "../../utils/unspash.js";
 
 export const Home = () => {
+	document.getElementById('SearchBar').style.display = 'none'
 	const main = document.querySelector('main');
 	main.classList.add('main');
 	cleanPage(main);
