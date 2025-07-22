@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.4.12"
+    "vite": "^7.0.0"
   },
   "dependencies": {
     "@oddbird/popover-polyfill": "^0.5.2",
